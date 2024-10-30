@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="black-fon">
+        <div class="center-rotate">
+            <h1>center</h1>
+        </div>
+        <div class="-right-Backface-visibility"></div>
+        <div class="right-Backface-visibility"></div>
+        <div class="-left-Backface-visibility"></div>
+        <div class="left-Backface-visibility"></div>
+    </div>
+</body>
+<style>
+    *,
+    *::before,
+    *::after{
+        padding: 0;
+        margin: 0;
+        border: 0;
+        box-sizing:border-box;
+    }
+    h1 {
+	font-size: 40px;
+	margin: 0px 0px 50px 0px;
+    
+    }
+    .black-fon{
+        background-color:black;
+        margin: 200px;
+        height: 200px;
+        padding: 400px;
+        position: relative;
+        
+    }
+    .-right-Backface-visibility{
+        float: right;
+        border-radius: 50%;
+        width: 150px;
+	    height: 150px;
+        background-color:aqua;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .right-Backface-visibility{
+        float: left;
+        border-radius: 50%;
+        width: 150px;
+	    height: 150px;
+        background-color:aqua;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .left-Backface-visibility{
+        float: left;
+        border-radius: 50%;
+        width: 150px;
+	    height: 150px;
+        background-color:aqua;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .-left-Backface-visibility{
+        float: right;
+        border-radius: 50%;
+        width: 150px;
+	    height: 150px;
+        background-color:aqua;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .center-rotate{
+       position: absolute;
+       background-color:blue; 
+       border-radius: 50%;
+       width: 150px;
+       height: 150px;
+       left: 50%;
+       right: 50%;
+      transform:translate(-50% , -50%)
+      align-items:center;
+    }
+    .center-rotate:hover{
+
+        transform: rotate(180deg);
+    }
+
+</style>
+</html>
